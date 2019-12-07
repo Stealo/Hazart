@@ -19,8 +19,12 @@
 
 <body>
 
+<!--NAVBAR-->
+
 <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
-    <a class="navbar-brand" href="#">LOGO</a>
+    <a class="navbar-brand" href="#">
+        <img class="m-3" src="img/picto/logo/hazart_logo.png" alt="">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,11 +44,13 @@
                 <a class="nav-link" href="#">Explainer</a>
             </li>
             <button class="button_navbar btn p-0 m-0">
-                <a class="nav-link" href="#">Générer votre pitch</a>
+                <a class="" href="#">Générer votre pitch</a>
             </button>
         </ul>
     </div>
 </nav>
+
+<!--BLOCK IMG TEXT-->
 
 <header>
 
@@ -86,17 +92,22 @@
 
 </header>
 
+<!--VIDEO CONTACT-->
+
 <main>
 
     <figure class="slide three row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 background_video">
-            <img class="video_campagne" src="img/img/hazart_generateur_art (5).jpg" alt="">
+            <iframe class="video_campagne img-fluid" style="height: 60%; width: 70%"
+                    src="https://www.youtube.com/embed/egRsDDwiY-U" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
         </div>
         <div class="block_video"></div>
-
     </figure>
 
-    <section class="slide_contact bg-dark">
+    <section class="slide_contact">
         <hgroup class="contact_form">
             <h2>Contactez-nous</h2>
             <p>Et proposez vore critique d'art</p>
@@ -105,30 +116,34 @@
         </hgroup>
     </section>
 
-    <figure class="slide three row">
+    <figure class="slide three row m-0 p-0">
+        <div class="black_background"></div><!--FOND NOIR-->
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 video_bas">
-
         </div>
         <div class="block_video"></div>
     </figure>
 
 </main>
 
+<!--FOOTER-->
+
 <footer>
-    <section class="row bg-dark slide_contact">
+    <section class="row slide_contact">
         <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 block_text_footer">
-            <h3>
+            <h4>
                 Inscrivez-vous à la newsletter
-            </h3>
-            <textarea name="" id="" cols="30" rows="5"></textarea>
+            </h4>
+            <textarea name="" id="" cols="30" rows="1"></textarea>
             <button>Envoyer</button>
         </div>
 
         <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 block_text_footer">
-            <h3 class="block_text_footer">Réseaux sociaux</h3>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <h4 class="block_text_footer">Suivez-nous</h4>
+            <div align="left">
+                <img class="m-3" src="img/picto/rs/facebook.svg" alt="">
+                <img class="m-3" src="img/picto/rs/twitter.svg" alt="">
+                <img class="m-3" src="img/picto/rs/instagram.svg" alt="">
+            </div>
         </div>
     </section>
 </footer>

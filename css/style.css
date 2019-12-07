@@ -101,6 +101,7 @@ p {
   padding: 0%;
   margin: 0%;
   display: table;
+  background-color: #000000;
 }
 
 .one {
@@ -126,9 +127,13 @@ p {
 
 /*NAVBAR*/
 .button_navbar {
-  background-color: #c82333;
+  background: linear-gradient(#e74c3c, #e67e22);
   border: none;
   padding: 0px;
+}
+.button_navbar a {
+  color: #ffffff;
+  margin: 0 8px 0 8px;
 }
 
 /*HEADER*/
@@ -190,8 +195,7 @@ p {
 .video_campagne {
   display: block;
   margin: auto;
-  height: 80vh;
-  margin-top: 10vh;
+  margin-top: 10%;
 }
 
 /*CONTACT*/
@@ -201,10 +205,26 @@ p {
   display: table-cell;
   vertical-align: middle;
 }
+.contact_form h2 {
+  color: #ffffff;
+}
+.contact_form p {
+  color: #ffffff;
+}
+.contact_form h3 {
+  font-size: 18px;
+  font-style: italic;
+}
+.contact_form button {
+  background-color: #c82333;
+  border: none;
+  border-radius: 15px;
+  color: #ffffff;
+}
 
 /*BLOCK VIDEO BAS*/
 .video_bas {
-  background-image: url("http://localhost:63342/hazart_private/img/img/hazart_generateur_art_fondvideo.jpg");
+  background-image: url("http://localhost:63342/hazart_private/img/img/hazard_video.jpg");
 }
 
 /*FOOTER*/
@@ -214,5 +234,31 @@ p {
   display: table-cell;
   vertical-align: middle;
 }
+.block_text_footer h4 {
+  color: #ffffff;
+}
+.block_text_footer button {
+  background: linear-gradient(#e74c3c, #e67e22);
+  border: none;
+  padding: 0px;
+}
+.block_text_footer a {
+  color: #ffffff;
+  margin: 0 8px 0 8px;
+}
+.block_text_footer img {
+  width: 5%;
+}
+
+/*
+.button_navbar{
+  background: linear-gradient(#e74c3c, #e67e22);
+  border: none;
+  padding: 0px;
+  a{
+    color: #ffffff;
+    margin: 0 8px 0 8px;
+  }
+}*/
 
 /*# sourceMappingURL=style.css.map */
