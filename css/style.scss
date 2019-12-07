@@ -49,45 +49,49 @@ table {
 }
 
 /*FIN DU RESET*/
+
 body {
   background-color: #000000;
 }
 
 p {
-  color: grey;
+  color: grey;;
 }
 
 h1 {
   font-size: 15px;
 }
-
 /*FONT*/
+
 @font-face {
-  font-family: "DIN Alternate Bold";
+  font-family: 'DIN Alternate Bold';
   font-style: normal;
   font-weight: normal;
-  src: local("DIN Alternate Bold"), url("http://localhost:63342/hazart_private/font/DINAlternate-Bold.woff") format("woff");
+  src: local('DIN Alternate Bold'), url('http://localhost:63342/hazart_private/font/DINAlternate-Bold.woff') format('woff');
 }
-@font-face {
-  font-family: "Source Code Pro";
+
+@font-face{
+  font-family: 'Source Code Pro';
   font-weight: 200;
   font-style: normal;
   font-stretch: normal;
-  src: url("http://localhost:63342/hazart_private/font/SourceCodePro-Light.ttf.woff") format("woff");
+  src: url('http://localhost:63342/hazart_private/font/SourceCodePro-Light.ttf.woff') format('woff')
 }
-h1 {
+
+h1{
   font-family: "DIN Alternate Bold", sans-serif;
 }
 
-h2 {
+h2{
   font-family: "DIN Alternate Bold", sans-serif !important;
 }
 
-p {
+p{
   font-family: "source sans pro", sans-serif;
 }
 
 /*VERTICAL SCROLL*/
+
 .slide {
   width: 100vw;
   height: 100vh;
@@ -125,13 +129,15 @@ p {
 }
 
 /*NAVBAR*/
-.button_navbar {
+
+.button_navbar{
   background-color: #c82333;
   border: none;
   padding: 0px;
 }
 
 /*HEADER*/
+
 .paint_header {
   width: 65%;
   position: absolute;
@@ -139,6 +145,7 @@ p {
   z-index: 1;
   right: 6%;
 }
+
 
 .block_text_header {
   color: #ffffff;
@@ -149,13 +156,13 @@ p {
   width: 76%;
   height: 50%;
   right: 31%;
-}
-.block_text_header p {
-  color: #ffffff;
-  font-size: 14px;
-}
-.block_text_header b {
-  border-bottom: 1px solid #ffffff;
+  p{
+    color: #ffffff;
+    font-size: 14px;
+  }
+  b{
+    border-bottom: 1px solid #ffffff;
+  }
 }
 
 .paint_header_grey {
@@ -173,16 +180,17 @@ p {
   position: inherit;
   top: 20%;
   left: 19%;
-}
-.block_text_header_grey p {
-  color: #000000;
-  font-size: 14px;
-}
-.block_text_header_grey b {
-  border-bottom: 1px solid #000000;
+  p{
+    color: #000000;
+    font-size: 14px;
+  }
+  b{
+    border-bottom: 1px solid #000000;
+  }
 }
 
 /*VIDEO*/
+
 .background_video {
   background-image: url("http://localhost:63342/hazart_private/img/img/hazart_generateur_art_fondvideo.jpg");
 }
@@ -195,6 +203,7 @@ p {
 }
 
 /*CONTACT*/
+
 .contact_form {
   text-align: center;
   margin: auto;
@@ -203,16 +212,16 @@ p {
 }
 
 /*BLOCK VIDEO BAS*/
-.video_bas {
+
+.video_bas{
   background-image: url("http://localhost:63342/hazart_private/img/img/hazart_generateur_art_fondvideo.jpg");
 }
 
 /*FOOTER*/
-.block_text_footer {
+
+.block_text_footer{
   text-align: center;
   margin: auto;
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: middle
 }
-
-/*# sourceMappingURL=style.css.map */
