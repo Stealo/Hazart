@@ -131,10 +131,13 @@ p{
 
 /*NAVBAR*/
 
+.logo{
+  width: 20%;
+}
+
 .button_navbar{
   background: linear-gradient(#e74c3c, #e67e22);
   border: none;
-  padding: 0px;
   a{
     color: #ffffff;
     margin: 0 8px 0 8px;
@@ -197,7 +200,7 @@ p{
 /*VIDEO*/
 
 .background_video {
-  background-image: url("http://localhost:63342/hazart_private/img/img/hazart_generateur_art_fondvideo.jpg");
+  background-image: url("http://hazart.me/img/img/hazart_generateur_art_fondvideo.jpg");
 }
 
 .video_campagne {
@@ -235,7 +238,7 @@ p{
 /*BLOCK VIDEO BAS*/
 
 .video_bas{
-  background-image: url("http://localhost:63342/hazart_private/img/img/hazard_video.jpg");
+  background-image: url("http://hazart.me/img/img/hazard_video.jpg");
 }
 
 /*FOOTER*/
