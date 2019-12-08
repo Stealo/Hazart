@@ -63,10 +63,13 @@ h1 {
 
 /*FONT*/
 @font-face {
-  font-family: "DIN Alternate Bold";
+  font-family: "Raleway";
   font-style: normal;
-  font-weight: normal;
-  src: local("DIN Alternate Bold"), url("http://localhost:63342/hazart_private/font/DINAlternate-Bold.woff") format("woff");
+  font-weight: 400;
+  src: url("http://hazart.me/font/raleway/raleway-v14-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Raleway"), local("Raleway-Regular"), url("http://hazart.me/font/raleway/raleway-v14-latin-regular.eot?#iefix") format("embedded-opentype"), url("http://hazart.me/font/raleway/raleway-v14-latin-regular.woff2") format("woff2"), url("http://hazart.me/font/raleway/raleway-v14-latin-regular.woff") format("woff"), url("http://hazart.me/font/raleway/raleway-v14-latin-regular.ttf") format("truetype"), url("http://hazart.me/font/raleway/raleway-v14-latin-regular.svg#Raleway") format("svg");
+  /* Legacy iOS */
 }
 @font-face {
   font-family: "Source Code Pro";
@@ -76,23 +79,45 @@ h1 {
   src: url("http://localhost:63342/hazart_private/font/SourceCodePro-Light.ttf.woff") format("woff");
 }
 h1 {
-  font-family: "DIN Alternate Bold", sans-serif;
+  font-family: "Raleway-Regular", sans-serif !important;
 }
 
 h2 {
-  font-family: "DIN Alternate Bold", sans-serif !important;
+  font-family: "Raleway-Regular", sans-serif !important;
+}
+
+h3 {
+  font-family: "Raleway-Regular", sans-serif !important;
+}
+
+h4 {
+  font-family: "Raleway-Regular", sans-serif !important;
+}
+
+h5 {
+  font-family: "Raleway-Regular", sans-serif !important;
 }
 
 p {
-  font-family: "source sans pro", sans-serif;
+  font-family: "source sans pro", sans-serif !important;
 }
 
+/*VARIABLE*/
 /*VERTICAL SCROLL*/
+.wraper {
+  scroll-snap-type: y mandatory;
+}
+
+.wrappy {
+  scroll-snap-align: start;
+}
+
 .slide {
   width: 100vw;
   height: 100vh;
   padding: 0%;
   margin: 0%;
+  scroll-snap-align: start;
 }
 
 .slide_contact {
@@ -101,62 +126,57 @@ p {
   padding: 0%;
   margin: 0%;
   display: table;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
-.one {
-  background: #ffffff;
-  scroll-snap-align: start;
+.slide_footer {
+  width: 100vw;
+  height: 50vh;
+  padding: 0%;
+  margin: 0%;
+  display: table;
+  background-color: #2D3436;
 }
 
-.two {
-  background: #a3f3d3;
-  scroll-snap-align: start;
-}
-
-.three {
-  background: #0bbaa0;
-  scroll-snap-align: start;
-}
-
-.four {
-  background: #00dfdf;
-  scroll-snap-align: start;
-  margin: 12px;
+textarea {
+  border-radius: 5px;
+  background-color: #F5F5F5;
+  border: none;
+  color: rgba(45, 52, 54, 0.6);
 }
 
 /*NAVBAR*/
+.navbar {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 9%;
+}
+
 .logo {
-  width: 20%;
+  width: 10%;
 }
 
 .button_navbar {
-  background: linear-gradient(#e74c3c, #e67e22);
-  border: none;
+  background: transparent;
 }
 .button_navbar a {
-  color: #ffffff;
-  margin: 0 8px 0 8px;
+  color: #E74C3C;
+  margin: 0 10px 0 8px;
+  border: 2px solid #E74C3C;
+  border-radius: 0px 15px 0px 15px;
+  padding: 1% 8% 2% 8%;
+}
+.button_navbar:hover a {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #E74C3C;
+  transition: 0.5s;
 }
 
 /*HEADER*/
-.paint_header {
-  width: 65%;
-  position: absolute;
-  top: 18%;
-  z-index: 1;
-  right: 6%;
-}
-
 .block_text_header {
   color: #ffffff;
-  background-color: #000000;
-  padding: 6%;
-  position: absolute;
-  top: 25%;
-  width: 76%;
-  height: 50%;
-  right: 31%;
+  background-color: #2D3436;
+  padding: 10%;
+  height: 60%;
 }
 .block_text_header p {
   color: #ffffff;
@@ -167,38 +187,34 @@ p {
 }
 
 .paint_header_grey {
-  position: absolute;
-  top: 25%;
   z-index: 1;
-  width: 62%;
-  left: 10%;
 }
 
 .block_text_header_grey {
-  color: #000000;
+  color: #2D3436;
   background-color: #F5F5F5;
-  padding: 22% 34% 12% 15%;
-  position: inherit;
-  top: 20%;
-  left: 19%;
+  padding: 10%;
 }
 .block_text_header_grey p {
-  color: #000000;
+  color: #2D3436;
   font-size: 14px;
 }
 .block_text_header_grey b {
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #2D3436;
+}
+
+.logo_maestria {
+  width: 25%;
+}
+
+.text_maestria {
+  width: 100%;
 }
 
 /*VIDEO*/
-.background_video {
-  background-image: url("http://hazart.me/img/img/hazart_generateur_art_fondvideo.jpg");
-}
-
 .video_campagne {
-  display: block;
-  margin: auto;
-  margin-top: 10%;
+  height: 100%;
+  width: 100%;
 }
 
 /*CONTACT*/
@@ -209,20 +225,14 @@ p {
   vertical-align: middle;
 }
 .contact_form h2 {
-  color: #ffffff;
+  color: #2D3436;
 }
 .contact_form p {
-  color: #ffffff;
+  color: #2D3436;
 }
 .contact_form h3 {
   font-size: 18px;
   font-style: italic;
-}
-.contact_form button {
-  background-color: #c82333;
-  border: none;
-  border-radius: 15px;
-  color: #ffffff;
 }
 
 /*BLOCK VIDEO BAS*/
@@ -230,38 +240,58 @@ p {
   background-image: url("http://hazart.me/img/img/hazard_video.jpg");
 }
 
+.play_picto {
+  margin: auto;
+  padding: 0 0 10% 25%;
+}
+
+.play_text {
+  z-index: 2;
+}
+
+.black_background {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFFFFF;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 1;
+}
+
+/*CONTACT*/
+.button_contact {
+  background: transparent;
+}
+.button_contact a {
+  color: #E74C3C;
+  margin: 0 15px 0 15px;
+  border: 2px solid #E74C3C;
+  border-radius: 0px 15px 0px 15px;
+  padding: 0.5% 25% 3% 25%;
+}
+.button_contact:hover a {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #E74C3C;
+  transition: 0.5s;
+}
+
 /*FOOTER*/
 .block_text_footer {
   text-align: center;
-  margin: auto;
+  margin-top: 12vh;
   display: table-cell;
   vertical-align: middle;
+  width: 100%;
 }
 .block_text_footer h4 {
-  color: #ffffff;
-}
-.block_text_footer button {
-  background: linear-gradient(#e74c3c, #e67e22);
-  border: none;
-  padding: 0px;
+  color: #FFFFFF;
 }
 .block_text_footer a {
-  color: #ffffff;
+  color: #E74C3C;
   margin: 0 8px 0 8px;
 }
 .block_text_footer img {
-  width: 5%;
+  width: 8%;
 }
-
-/*
-.button_navbar{
-  background: linear-gradient(#e74c3c, #e67e22);
-  border: none;
-  padding: 0px;
-  a{
-    color: #ffffff;
-    margin: 0 8px 0 8px;
-  }
-}*/
 
 /*# sourceMappingURL=style.css.map */
