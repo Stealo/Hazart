@@ -159,10 +159,21 @@ textarea {
 }
 
 /*NAVBAR*/
-
 .navbar {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.7) !important;
   height: 9%;
+}
+
+.link_nav{
+  color: $noir !important;
+  &:hover{
+    color: lighten($noir,25%) !important;
+    border: none;
+  }
+}
+
+nav-link{
+  color: $noir !important;
 }
 
 .logo {
@@ -259,7 +270,7 @@ textarea {
 /*BLOCK VIDEO BAS*/
 
 .video_bas {
-  background-image: url("http://hazart.me/img/img/hazard_video.jpg");
+  background: url("http://hazart.me/img/img/hazard_video.jpg") no-repeat center ;
 }
 
 .play_picto {
