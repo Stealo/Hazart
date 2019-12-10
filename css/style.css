@@ -183,12 +183,16 @@ nav-link {
   transition: 0.5s;
 }
 
+@media screen and (max-width: 991px) {
+  .logo_marg {
+    margin-left: 28%;
+  }
+}
 /*HEADER*/
 .block_text_header {
   color: #ffffff;
   background-color: #2D3436;
   padding: 10%;
-  height: 60%;
 }
 .block_text_header p {
   color: #ffffff;
@@ -223,6 +227,47 @@ nav-link {
   width: 100%;
 }
 
+/*MAIN*/
+@media screen and (max-width: 768px) {
+  .img_paint {
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+  }
+
+  .block_text_paint {
+    height: 80vh;
+    bottom: -33px;
+    position: absolute !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  .block_text_header_grey {
+    padding: 30% 20% 10% 20% !important;
+    position: absolute !important;
+    top: 11%;
+    margin-top: 45%;
+  }
+
+  .block_text_header_grey_image {
+    position: absolute;
+    bottom: 60%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .img_paint {
+    position: absolute;
+    top: -45px;
+    z-index: 2;
+  }
+
+  .block_text_paint {
+    height: 80vh;
+    bottom: -33px;
+    position: absolute !important;
+    padding: 40% 73px 12% 17% !important;
+  }
+}
 /*VIDEO*/
 .video_campagne {
   height: 100%;

@@ -35,39 +35,12 @@
 
 <!--NAVBAR-->
 
-
-<!--<nav class="navbar fixed-top navbar-expand-lg ">
-    <a class="navbar-brand" href="#">
-        <img class="m-3 logo" src="img/picto/logo/hazart_logo.png" alt="">
-        <img class="logo" src="img/picto/logo/hazart.png" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav m-auto">
-            <li class="nav-item">
-                <a class="nav-link mr-5 link_nav" href="#film">Le film <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mr-5 link_nav" href="#explainer">Explainer</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mr-5 link_nav" href="#contact">Contact</a>
-            </li>
-        </ul>
-        <button class="button_navbar btn mr-5">
-            <a class="" href="#">Générez votre pitch</a>
-        </button>
-    </div>
-</nav>-->
-
 <nav class="navbar fixed-top navbar-expand-lg ">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand position-absolute logo_marg" href="#">
         <img class="m-3 logo" src="img/picto/logo/hazart_logo.png" alt="">
         <img class="logo" src="img/picto/logo/hazart.png" alt="">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><p>=</p></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -112,28 +85,30 @@
         <div class="block_video"></div>
     </figure>
 
-    <section class="p-0 m-0 slide row">
-        <div class="p-0 d-flex align-items-center col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <img class="p-0 img-fluid col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9 offset-md-3"
-                 src="img/img/hazart_generateur_art(1).jpg" alt="">
-        </div>
+    <section class="p-0 m-0 slide row justify-content-center">
 
-        <div class="p-0 col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex align-items-center">
-            <hgroup class="block_text_header m-0 d-flex align-items-center row col-12 col-sm-10 col-md-10 col-lg-10 col-xl-10">
-                <h2>Hazart de l'art et <br>rien d'autre</h2>
-                <p>Nous avons constaté que, de plus en plus de philistins cultivés se servent de l’art pour gravir
-                    les
-                    échelons de leur rang social.
-                    C’est la raison pour laquelle notre générateur de pitch est fait pour eux !
-                    Ce générateur leur permettra de générer des critiques artistiques à n’importe quel moment pour
-                    briller en société.
-                </p>
-                <button class="button_navbar btn p-0 m-0">
-                    <a class="" href="#">Générez votre pitch</a>
-                </button>
-            </hgroup>
-        </div>
-    </section>
+    <div class="img_paint p-0 d-flex align-items-center col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+        <img class="p-0 img-fluid w-100 col-8 offset-2 col-sm-8 offset-sm-2 col-md-8 offset-md-4 col-lg-8 col-xl-8"
+             src="img/img/hazart_generateur_art(1).jpg" alt="">
+    </div>
+
+    <div class="p-0 d-flex align-items-center col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <hgroup class="block_text_header block_text_paint m-0 d-flex align-items-center row col-sm-12 col-md-10 col-lg-10 col-xl-10">
+            <h2>Hazart de l'art et <br>rien d'autre</h2>
+            <p>Nous avons constaté que, de plus en plus de philistins cultivés se servent de l’art pour gravir
+                les
+                échelons de leur rang social.
+                C’est la raison pour laquelle notre générateur de pitch est fait pour eux !
+                Ce générateur leur permettra de générer des critiques artistiques à n’importe quel moment pour
+                briller en société.
+            </p>
+            <button class="button_navbar btn p-0 m-0">
+                <a class="" href="#">Générez votre pitch</a>
+            </button>
+        </hgroup>
+    </div>
+
+</section>
 
     <figure class="slide three row m-0 p-0" id="explainer">
         <div class="black_background p-0 m-0"></div><!--FOND NOIR-->
@@ -156,7 +131,7 @@
     <section class="p-0 m-0 slide row" id="association">
 
         <div class="p-0 col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex align-items-center">
-            <hgroup class="block_text_header_grey img-fluid col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9 offset-md-3">
+            <hgroup class="block_text_header_grey img-fluid col-12 col-sm-10 offset-sm-2 col-md-9 col-lg-9 col-xl-9 offset-md-3">
                 <h2 class="text-right">Maestria</h2>
                 <p class="text-right">L’art se contemple et nous fait ressentir des émotions, mais ça compréhension peut
                     nous échapper.
@@ -175,36 +150,36 @@
         </div>
 
         <div class="p-0 d-flex align-items-center col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <img class="p-0 img-fluid col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"
+            <img class="block_text_header_grey_image p-0 img-fluid col-8 offset-2 col-sm-9 offset-sm-0 col-md-9 col-lg-9 col-xl-9"
                  src="img/img/hazart_generateur_art (2).jpg" alt="">
         </div>
 
     </section>
 
-    <!--CONTACT-->
-
-    <section class="slide_contact" id="contact">
-        <hgroup class="contact_form ">
-            <h2>Contactez-nous</h2>
-            <p>Et proposez votre critique d'art</p>
-            <textarea class="tex" name="contactez-nous" id="contact" cols="60" rows="4"> écrivez votre message ici
-            </textarea>
-            <br>
-            <button class="button_contact btn p-0 m-0 mt-2">
-                <a class="" href="#">Envoyer</a>
-            </button>
-        </hgroup>
-    </section>
-
 </main>
+
+<!--CONTACT-->
+
+<section class="slide_contact" id="contact">
+    <hgroup class="contact_form">
+        <h2>Contactez-nous</h2>
+        <p>Et proposez votre critique d'art</p>
+        <textarea class="tex" name="contactez-nous" id="contact" cols="60" rows="4"> écrivez votre message ici
+            </textarea>
+        <br>
+        <button class="button_contact btn p-0 m-0 mt-2">
+            <a class="" href="#">Envoyer</a>
+        </button>
+    </hgroup>
+</section>
 
 <!--FOOTER-->
 
 <footer>
-    <section class="row p-0 m-0 slide_footer p-0 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <section class="row p-0 m-0 slide_footer p-0">
 
         <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 block_text_footer">
-            <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 offset-md-3">
+            <div class="">
                 <h4>
                     Inscrivez-vous à la newsletter
                 </h4>
@@ -219,7 +194,7 @@
         </div>
 
         <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 block_text_footer">
-            <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 offset-md-3">
+            <div class="">
                 <h4 class="block_text_footer">Suivez-nous</h4>
                 <div class="mt-5" align="left">
                     <a href="https://www.facebook.com/hazart.art/">
