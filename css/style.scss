@@ -228,6 +228,11 @@ nav-link {
     position: absolute !important;
     bottom: 0% !important;
     z-index: -1;
+    height: 68vh !important;
+    padding: 40% 17% 2% 18% !important;
+  }
+  h2{
+    font-size: 20px !important;
   }
 }
 
@@ -236,7 +241,6 @@ nav-link {
 .video_bas {
   background: url("http://hazart.me/img/img/hazard_video.jpg") no-repeat center;
 }
-
 
 .red-cube {
   background: red;
@@ -254,6 +258,59 @@ nav-link {
 .show {
   opacity: 1;
 }
+
+/*PRESENTAION MAESTRIA*/
+
+.block_text_header_grey {
+  color: $noir;
+  background-color: $gris;
+  padding: 10%;
+  p {
+    color: $noir;
+    font-size: 14px;
+  }
+  b {
+    border-bottom: 1px solid $noir;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .block_text_header_grey {
+    position: absolute !important;
+    bottom: -100% !important;
+    height: 68vh !important;
+    padding: 40% 17% 0 18% !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .block_text_header_grey_image {
+    position: absolute!important;
+    top: -65%;
+  }
+  h2{
+    font-size: 20px !important;
+  }
+}
+
+/*CONTACT*/
+
+ .button_contact {
+   background: transparent;
+   a {
+     color: $rouge;
+     margin: 0 15px 0 15px;
+     border: 2px solid $rouge;
+     border-radius: 0px 15px 0px 15px;
+     padding: 0.5% 25% 3% 25%;
+   }
+   &:hover a {
+     background-color: rgb(255, 255, 255, 0.3);
+     color: $rouge;
+     transition: 0.5s;
+   }
+ }
+
 /*
 
 !*HEADER*!

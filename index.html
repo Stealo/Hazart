@@ -10,7 +10,7 @@
 
     <script src="utils/ScrollMagic.min.js"></script>
 
-    <script type="text/javascript" src="js/scrypt.js"></script>
+    <script type="text/javascript" src="js/scrypt.js" async></script>
     <script src="js/jquery.min.js" async></script>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -25,7 +25,6 @@
         }
 
         gtag('js', new Date());
-
         gtag('config', 'UA-149909743-2');
     </script>
 
@@ -80,7 +79,7 @@
     </figure>
 
     <!--BLOCK HAZART-->
-    <section class="p-0 m-0 slide row justify-content-center red-cube">
+    <section class="p-0 m-0 slide row justify-content-center">
 
         <div class="img_paint p-0 d-flex align-items-center col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
             <img class="p-0 img-fluid w-100 col-8 offset-2 col-sm-8 offset-sm-2 col-md-8 offset-md-4 col-lg-8 col-xl-8"
@@ -106,11 +105,11 @@
     </section>
 
     <!--BLOCK MOTION-->
-    <figure class="slide three row m-0 p-0" id="explainer">
+    <figure class="slide row m-0 p-0" id="explainer">
         <div class="black_background p-0 m-0"></div><!--FOND NOIR-->
-        <div class="video_bas d-flex justify-content-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="video_bas d-flex justify-content-center col-12">
             <div class="m-auto play_text">
-                <img class="play_picto" src="img/picto/play.png" alt="">
+                <img class="play_picto col-8 offset-2" src="img/picto/play.png" alt="">
                 <h2 class="text-center">Notre histoire</h2>
                 <p class="text-center">Découvrez Hazart en une seul minute</p>
             </div>
@@ -121,12 +120,6 @@
 
 </header>
 
-<div class="slide two">
-
-    <div style="height: 350px;"></div>
-    <div class="red-cube">ScrollMagic</div>
-    <div style="height: 350px;"></div>
-</div>
 <!--PRESENTATION MAESTRIA-->
 <main>
 
@@ -157,16 +150,20 @@
 
     <!--BLOCK CONTACT-->
     <section class="slide_contact" id="contact">
-        <hgroup class="contact_form">
-            <h2>Contactez-nous</h2>
-            <p>Et proposez votre critique d'art</p>
-            <textarea class="tex" name="contactez-nous" id="contact" rows="4"> écrivez votre message ici
+        <div class="col-12 col-sm-6 offset-sm-3 col-md-6 col-lg-6 col-xl-6 mt-5">
+            <hgroup class="contact_form">
+                <h2 class="text-center">Contactez-nous</h2>
+                <p class="text-center">Et proposez votre critique d'art</p>
+                <textarea class="tex col-8 offset-2" name="contactez-nous" id="contact" rows="4"> écrivez votre message ici
             </textarea>
-            <br>
-            <button class="button_contact btn p-0 m-0 mt-2">
-                <a class="" href="#">Envoyer</a>
-            </button>
-        </hgroup>
+                <br>
+                <div class="col-12 d-flex align-items-center mt-3">
+                    <button class="button_contact btn p-0 m-0 mt-2 col-4 offset-3 w-50 m-auto">
+                        <a class="" href="#">Envoyer</a>
+                    </button>
+                </div>
+            </hgroup>
+        </div>
     </section>
 
 </main>
@@ -176,28 +173,26 @@
     <section class="row p-0 m-0 slide_footer p-0">
 
         <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 block_text_footer">
-            <div class="">
-                <h4>
+            <div class="mt-5 col-10 offset-2">
+                <h4 class="">
                     Inscrivez-vous à la newsletter
                 </h4>
-                <div class="m-5 d-flex justify-content-center">
-                    <textarea name="" id="" cols="30" rows="1"></textarea>
+                    <textarea class="w-80" name="" id="" rows="1"></textarea>
                     <button class="button_contact btn p-0 m-0">
                         <a class="" href="#">Envoyer</a>
                     </button>
-                </div>
                 <p>Mentions légales</p>
             </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 block_text_footer">
-            <div class="">
+            <div class="mt-5 col-10 offset-2">
                 <h4 class="block_text_footer">Suivez-nous</h4>
-                <div class="mt-5" align="left">
+                <div class="">
                     <a href="https://www.facebook.com/hazart.art/">
                         <img class="" src="img/picto/rs/facebook.svg" alt="">
                     </a>
-                    <a href="https://twitter.com/Hazart64558163">
+                    <a href="https://twitter.com/hazart_art">
                         <img class="" src="img/picto/rs/twitter.svg" alt="">
                     </a>
                     <a href="https://www.instagram.com/hazart.art/">
