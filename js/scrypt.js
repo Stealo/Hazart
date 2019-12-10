@@ -8,7 +8,7 @@ var scene = new ScrollMagic.Scene({
 .addTo(controller);
 
 
-
+/*SMOOTH SCROLL*/
 $('a[href*="#"]')
     .not('[href="#"]')
     .not('[href="#0"]')
@@ -37,3 +37,14 @@ $('a[href*="#"]')
         }
       }
     });
+
+/*SCROLLMAGIC ANIM*/
+
+var controller = new ScrollMagic.Controller();
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: '.red-cube'
+})
+
+    .setClassToggle('.red-cube', 'show')
+    .addTo(controller);

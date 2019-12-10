@@ -61,6 +61,7 @@ p {
 h1 {
   font-size: 15px;
 }
+
 /*FONT*/
 
 @font-face {
@@ -76,7 +77,7 @@ h1 {
   url('http://hazart.me/font/raleway/raleway-v14-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
 
-@font-face{
+@font-face {
   font-family: 'Source Code Pro';
   font-weight: 200;
   font-style: normal;
@@ -164,15 +165,16 @@ textarea {
   height: 9%;
 }
 
-.link_nav{
+.link_nav {
   color: $noir !important;
-  &:hover{
-    color: lighten($noir,25%) !important;
+
+  &:hover {
+    color: lighten($noir, 25%) !important;
     border: none;
   }
 }
 
-nav-link{
+nav-link {
   color: $noir !important;
 }
 
@@ -180,29 +182,81 @@ nav-link{
   width: 10%;
 }
 
-.button_navbar{
+.button_navbar {
   background: transparent;
-  a{
+
+  a {
     color: $rouge;
     margin: 0 10px 0 8px;
     border: 2px solid $rouge;
     border-radius: 0px 15px 0px 15px;
     padding: 1% 8% 2% 8%;
   }
-  &:hover a{
-    background-color: rgb(255,255,255, 0.3);
+
+  &:hover a {
+    background-color: rgb(255, 255, 255, 0.3);
     color: $rouge;
     transition: 0.5s;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .logo_marg{
+  .logo_marg {
     margin-left: 28%;
   }
 }
 
 /*HEADER*/
+
+.block_text_header {
+  color: #ffffff;
+  background-color: $noir;
+  padding: 10%;
+
+  p {
+    color: #ffffff;
+    font-size: 14px;
+  }
+
+  b {
+    border-bottom: 1px solid #ffffff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .block_text_header {
+    position: absolute !important;
+    bottom: 0% !important;
+    z-index: -1;
+  }
+}
+
+/*BLOCK VIDEO BAS*/
+
+.video_bas {
+  background: url("http://hazart.me/img/img/hazard_video.jpg") no-repeat center;
+}
+
+
+.red-cube {
+  background: red;
+  display: block;
+  padding: 40px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  opacity: 0;
+  width: 50vw;
+  transition: 1.5s;
+}
+
+.show {
+  opacity: 1;
+}
+/*
+
+!*HEADER*!
 
 .block_text_header {
   color: #ffffff;
@@ -246,7 +300,7 @@ nav-link{
   width: 100%;
 }
 
-/*MAIN*/
+!*MAIN*!
 
 @media screen and (max-width: 768px) {
   .img_paint {
@@ -289,7 +343,7 @@ nav-link{
 }
 
 
-/*VIDEO*/
+!*VIDEO*!
 
 .video_campagne {
   height: 100%;
@@ -297,7 +351,7 @@ nav-link{
 }
 
 
-/*CONTACT*/
+!*CONTACT*!
 
 .contact_form {
   text-align: center;
@@ -316,7 +370,7 @@ nav-link{
   }
 }
 
-/*BLOCK VIDEO BAS*/
+!*BLOCK VIDEO BAS*!
 
 .video_bas {
   background: url("http://hazart.me/img/img/hazard_video.jpg") no-repeat center ;
@@ -340,7 +394,7 @@ nav-link{
   z-index: 1;
 }
 
-/*CONTACT*/
+!*CONTACT*!
 
 .button_contact {
   background: transparent;
@@ -358,13 +412,13 @@ nav-link{
   }
 }
 
-/*CONTACT*/
+!*CONTACT*!
 
 .tex{
   width: 60%;
 }
 
-/*FOOTER*/
+!*FOOTER*!
 
 .block_text_footer {
   text-align: center;
@@ -386,3 +440,4 @@ nav-link{
     width: 8%;
   }
 }
+*/
