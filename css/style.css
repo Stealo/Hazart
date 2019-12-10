@@ -332,6 +332,11 @@ nav-link {
   transition: 0.5s;
 }
 
+/*CONTACT*/
+.tex {
+  width: 60%;
+}
+
 /*FOOTER*/
 .block_text_footer {
   text-align: center;
