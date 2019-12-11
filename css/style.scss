@@ -145,7 +145,6 @@ $blanc: #FFFFFF;
 
 .slide_footer {
   width: 100vw;
-  height: 50vh;
   padding: 0%;
   margin: 0%;
   display: table;
@@ -184,7 +183,6 @@ nav-link {
 
 .button_navbar {
   background: transparent;
-
   a {
     color: $rouge;
     margin: 0 10px 0 8px;
@@ -192,7 +190,6 @@ nav-link {
     border-radius: 0px 15px 0px 15px;
     padding: 1% 8% 2% 8%;
   }
-
   &:hover a {
     background-color: rgb(255, 255, 255, 0.3);
     color: $rouge;
@@ -235,6 +232,46 @@ nav-link {
     font-size: 20px !important;
   }
 }
+/*GENERATEUR DE CITATION*/
+
+.modal-content{
+  background-color: $noir !important;
+  .modal-title{
+    color: $blanc !important;
+  }
+  .modal-header{
+    border: none;
+  }
+  .button{
+    color: $rouge;
+    margin: 0 10px 0 8px;
+    border: 2px solid $rouge;
+    border-radius: 0px 15px 0px 15px;
+    padding: 1% 8% 2% 8%;
+  }
+}
+
+.button_generateur {
+  background: transparent;
+  color: $rouge !important;
+  margin: 0 10px 0 8px;
+  border: 2px solid $rouge;
+  border-radius: 0px 15px 0px 15px;
+  p {
+    color: $rouge !important;
+    margin: 0 10px 0 8px;
+  }
+  &:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+    color: $rouge;
+    transition: 0.5s;
+  }
+}
+
+.citation{
+  color: $blanc;
+  font-size: 15px;
+}
 
 /*BLOCK VIDEO BAS*/
 
@@ -259,7 +296,7 @@ nav-link {
   opacity: 1;
 }
 
-/*PRESENTAION MAESTRIA*/
+/*PRESENTATION MAESTRIA*/
 
 .block_text_header_grey {
   color: $noir;
@@ -310,6 +347,30 @@ nav-link {
      transition: 0.5s;
    }
  }
+
+ /*FOOTER*/
+
+.block_text_footer {
+  width: 100%;
+  h4 {
+    color: $blanc;
+  }
+  a {
+    color: $rouge;
+  }
+  img {
+    width: 8%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .block_text_footer {
+    width: 100%;
+  }
+  .button_contact{
+    margin-top: 150px;
+  }
+}
 
 /*
 

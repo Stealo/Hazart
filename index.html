@@ -59,7 +59,7 @@
             </li>
         </ul>
         <button class="button_navbar btn mr-5">
-            <a class="" href="#">Générez votre pitch</a>
+            <a class="" href="#generateur">Générez votre pitch</a>
         </button>
     </div>
 </nav>
@@ -86,7 +86,7 @@
                  src="img/img/hazart_generateur_art(1).jpg" alt="">
         </div>
 
-        <div class="p-0 d-flex align-items-center col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="p-0 d-flex align-items-center col-sm-12 col-md-6 col-lg-6 col-xl-6" id="generateur">
             <hgroup class="block_text_header block_text_paint m-0 d-flex align-items-center row col-sm-12 col-md-10 col-lg-10 col-xl-10">
                 <h2>Hazart de l'art et <br>rien d'autre</h2>
                 <p>Nous avons constaté que, de plus en plus de philistins cultivés se servent de l’art pour gravir
@@ -96,13 +96,47 @@
                     Ce générateur leur permettra de générer des critiques artistiques à n’importe quel moment pour
                     briller en société.
                 </p>
-                <button class="button_navbar btn p-0 m-0">
-                    <a class="" href="#">Générez votre pitch</a>
+                <button class="button_navbar btn p-0 m-0" data-toggle="modal" data-target="#exampleModal">
+                    <a class="" href="#generateur">Générez votre pitch</a>
                 </button>
             </hgroup>
+
+        </div>
+
+        <!--LE GENERATEUR-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header m-auto">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Générateur d'analyse</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <blockquote>
+                                <p class="citation">Citations azerty</p>
+                            </blockquote>
+                            <div class="m-auto text-center mt-5">
+                            <button class="button_generateur" id="generer">
+                                <p class="p-0 m-0">
+                                    générer
+                                </p>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>
+
 
     <!--BLOCK MOTION-->
     <figure class="slide row m-0 p-0" id="explainer">
@@ -150,7 +184,7 @@
 
     <!--BLOCK CONTACT-->
     <section class="slide_contact" id="contact">
-        <div class="col-12 col-sm-6 offset-sm-3 col-md-6 col-lg-6 col-xl-6 mt-5">
+        <div class="col-12 col-sm-6 offset-sm-3 col-md-6 col-lg-6 col-xl-6 mt-5 mb-5">
             <hgroup class="contact_form">
                 <h2 class="text-center">Contactez-nous</h2>
                 <p class="text-center">Et proposez votre critique d'art</p>
@@ -158,7 +192,7 @@
             </textarea>
                 <br>
                 <div class="col-12 d-flex align-items-center mt-3">
-                    <button class="button_contact btn p-0 m-0 mt-2 col-4 offset-3 w-50 m-auto">
+                    <button class="button_contact btn p-0 m-0 mt-2 m-auto col-4">
                         <a class="" href="#">Envoyer</a>
                     </button>
                 </div>
@@ -170,18 +204,19 @@
 
 <!--FOOTER-->
 <footer>
-    <section class="row p-0 m-0 slide_footer p-0">
+    <section class="row p-0 m-0 slide_footer pb-5">
 
         <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 block_text_footer">
             <div class="mt-5 col-10 offset-2">
                 <h4 class="">
                     Inscrivez-vous à la newsletter
                 </h4>
-                    <textarea class="w-80" name="" id="" rows="1"></textarea>
-                    <button class="button_contact btn p-0 m-0">
-                        <a class="" href="#">Envoyer</a>
+                <div class="d-flex align-items-center row">
+                    <textarea class="w-80 mt-3" name="" id="" rows="1"></textarea>
+                    <button class="button_contact btn p-0 m-0 mt-3">
+                        <a href="#">Envoyer</a>
                     </button>
-                <p>Mentions légales</p>
+                </div>
             </div>
         </div>
 
@@ -189,15 +224,198 @@
             <div class="mt-5 col-10 offset-2">
                 <h4 class="block_text_footer">Suivez-nous</h4>
                 <div class="">
-                    <a href="https://www.facebook.com/hazart.art/">
-                        <img class="" src="img/picto/rs/facebook.svg" alt="">
+                    <a href="https://www.facebook.com/hazart.art/" target="_blank">
+                        <img class="mr-3" src="img/picto/rs/facebook.svg" alt="">
                     </a>
-                    <a href="https://twitter.com/hazart_art">
-                        <img class="" src="img/picto/rs/twitter.svg" alt="">
+                    <a href="https://twitter.com/hazart_art" target="_blank">
+                        <img class="mr-3" src="img/picto/rs/twitter.svg" alt="">
                     </a>
-                    <a href="https://www.instagram.com/hazart.art/">
-                        <img class="" src="img/picto/rs/instagram.svg" alt="">
+                    <a href="https://www.instagram.com/hazart.art/" target="_blank">
+                        <img class="mr-3" src="img/picto/rs/instagram.svg" alt="">
                     </a>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="button_contact btn col-6 offset-3 mt-5" data-toggle="modal"
+                data-target="#mention_legale">
+            Mentions légales
+        </button>
+
+        <div class="modal fade" id="mention_legale" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Mentions légales</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="et_pb_text_inner"><h1 style="text-align: center;"><span style="color: #000000;">Mentions Légales</span>
+                        </h1>
+                            <h3 style="text-align: left;"><strong>Présentation du site</strong></h3>
+                            <p>En vertu de l’article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans
+                                l’économie numérique, il est précisé aux utilisateurs du site www.association-arts.com
+                                l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi
+                                :</p>
+                            <p><strong>Propriétaire :</strong> Association ARTS – Association – N° Siret :
+                                79821278300038 – 70 rue du 18 juin – 17138 Puilboreau</p>
+                            <p><strong>Statut juridique :</strong> Association loi 1901</p>
+                            <p><strong>Président :</strong> Olivier Dubufresnil – <a
+                                    href="mailto:contact@association-arts.com">contact@association-arts.com</a><br>
+                                <strong>Trésorière :</strong> Isabelle Girard<br> <strong>Secrétaire :</strong> Laurent&nbsp;<span>Joubeaux</span>
+                            </p>
+                            <p><strong>Responsable publication :</strong> Stephane Atlas – <a
+                                    href="1art-2vies@orange.fr">1art-2vies@orange.fr</a><br> Licence d’entrepreneur du
+                                spectacle n°2 enregistrée sous n° 1084723 et n°3 enregistrée sous n° 1084724</p>
+                            <p><strong>Webmaster et créatrice du site :</strong> <a
+                                    href="https://laurelinefoucault.fr/">Laureline Foucault</a> – <a
+                                    href="contact@laurelinefoucault.fr">contact@laurelinefoucault.fr</a></p>
+                            <p><strong>Hébergeur :</strong> 1&amp;1 Internet SARL 7 place de la Gare BP 70109 57201
+                                Sarreguemines Cedex France</p>
+                            <p><strong>Crédits :</strong> Le modèle de mentions légales est offert par Subdelirium.com
+                                Mentions légales</p>
+                            <h3>Conditions générales d’utilisation du site et des services proposés</h3>
+                            <p>L’utilisation du site www.association-arts.com implique l’acceptation pleine et entière
+                                des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation
+                                sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site
+                                www.association-arts.com sont donc invités à les consulter de manière régulière.</p>
+                            <p>Ce site est normalement accessible à tout moment aux utilisateurs. Une interruption pour
+                                raison de maintenance technique peut être toutefois décidée par association ARTS, qui
+                                s’efforcera alors de communiquer préalablement aux utilisateurs les dates et heures de
+                                l’intervention.</p>
+                            <p>Le site www.association-arts.com est mis à jour régulièrement. De la même façon, les
+                                mentions légales peuvent être modifiées à tout moment : elles s’imposent néanmoins à
+                                l’utilisateur qui est invité à s’y référer le plus souvent possible afin d’en prendre
+                                connaissance.</p>
+                            <h3>Description des services fournis</h3>
+                            <p>Le site www.association-arts.com a pour objet de fournir une information concernant
+                                l’ensemble des activités de l’association.</p>
+                            <p>Association ARTS s’efforce de fournir sur le site www.association-arts.com des
+                                informations aussi précises que possible. Toutefois, il ne pourra être tenue responsable
+                                des omissions, des inexactitudes et des carences dans la mise à jour, qu’elles soient de
+                                son fait ou du fait des tiers partenaires qui lui fournissent ces informations.</p>
+                            <p>&nbsp;</p>
+                            <p>Toutes les informations indiquées sur le site www.association-arts.com sont données à
+                                titre indicatif, et sont susceptibles d’évoluer. Par ailleurs, les renseignements
+                                figurant sur le site www.association-arts.com ne sont pas exhaustifs. Ils sont donnés
+                                sous réserve de modifications ayant été apportées depuis leur mise en ligne.</p>
+                            <h3>Limitations contractuelles sur les données techniques</h3>
+                            <p>Le site utilise la technologie JavaScript.</p>
+                            <p>Le site Internet ne pourra être tenu responsable de dommages matériels liés à
+                                l’utilisation du site. De plus, l’utilisateur du site s’engage à accéder au site en
+                                utilisant un matériel récent, ne contenant pas de virus et avec un navigateur de
+                                dernière génération mis-à-jour</p><h4>Propriété intellectuelle et contrefaçons</h4>
+                            <p>Association ARTS est propriétaire des droits de propriété intellectuelle ou détient les
+                                droits d’usage sur tous les éléments accessibles sur le site, notamment les textes,
+                                images, graphismes, logo, icônes, sons, logiciels.</p>
+                            <p>Toute reproduction, représentation, modification, publication, adaptation de tout ou
+                                partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est
+                                interdite, sauf autorisation écrite préalable de : association ARTS.</p>
+                            <p>Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il
+                                contient sera considérée comme constitutive d’une contrefaçon et poursuivie conformément
+                                aux dispositions des articles L.335-2 et suivants du Code de Propriété
+                                Intellectuelle.</p>
+                            <p>&nbsp;</p>
+                            <h3>Limitations de responsabilité</h3>
+                            <p>Association ARTS ne pourra être tenue responsable des dommages directs et indirects
+                                causés au matériel de l’utilisateur, lors de l’accès au site www.association-arts.com,
+                                et résultant soit de l’utilisation d’un matériel ne répondant pas aux spécifications
+                                indiquées au point 4, soit de l’apparition d’un bug ou d’une incompatibilité.</p>
+                            <p>Association ARTS ne pourra également être tenue responsable des dommages indirects (tels
+                                par exemple qu’une perte de marché ou perte d’une chance) consécutifs à l’utilisation du
+                                site www.association-arts.com.</p>
+                            <p>Des espaces interactifs (possibilité de poser des questions dans l’espace contact) sont à
+                                la disposition des utilisateurs. Association ARTS se réserve le droit de supprimer, sans
+                                mise en demeure préalable, tout contenu déposé dans cet espace qui contreviendrait à la
+                                législation applicable en France, en particulier aux dispositions relatives à la
+                                protection des données. Le cas échéant, association ARTS se réserve également la
+                                possibilité de mettre en cause la responsabilité civile et/ou pénale de l’utilisateur,
+                                notamment en cas de message à caractère raciste, injurieux, diffamant, ou
+                                pornographique, quel que soit le support utilisé (texte, photographie…).</p>
+                            <h3>Gestion des données personnelles</h3>
+                            <p>En France, les données personnelles sont notamment protégées par la loi n° 78-87 du 6
+                                janvier 1978, la loi n° 2004-801 du 6 août 2004, l’article L. 226-13 du Code pénal et la
+                                Directive Européenne du 24 octobre 1995.</p>
+                            <p>A l’occasion de l’utilisation du site www.association-arts.com, peuvent êtres recueillis
+                                : l’URL des liens par l’intermédiaire desquels l’utilisateur a accédé au site
+                                www.association-arts.com, le fournisseur d’accès de l’utilisateur, l’adresse de
+                                protocole Internet (IP) de l’utilisateur.</p>
+                            <p>En tout état de cause association ARTS ne collecte des informations personnelles
+                                relatives à l’utilisateur que pour le besoin de certains services proposés par le site
+                                www.association-arts.com. L’utilisateur fournit ces informations en toute connaissance
+                                de cause, notamment lorsqu’il procède par lui-même à leur saisie. Il est alors précisé à
+                                l’utilisateur du site www.association-arts.com l’obligation ou non de fournir ces
+                                informations.</p>
+                            <p>Conformément aux dispositions des articles 38 et suivants de la loi 78-17 du 6 janvier
+                                1978 relative à l’informatique, aux fichiers et aux libertés, tout utilisateur dispose
+                                d’un droit d’accès, de rectification et d’opposition aux données personnelles le
+                                concernant, en effectuant sa demande écrite et signée, accompagnée d’une copie du titre
+                                d’identité avec signature du titulaire de la pièce, en précisant l’adresse à laquelle la
+                                réponse doit être envoyée.</p>
+                            <p>Le client peut exercer son droit d’accès ou de correction en contactant le prestataire
+                                par courrier à l’adresse :</p><h5>Association ARTS<br> 70 rue du 18 juin<br> 17138
+                                Puilboreau</h5>
+                            <p>Aucune information personnelle de l’utilisateur du site www.association-arts.com n’est
+                                publiée à l’insu de l’utilisateur, échangée, transférée, cédée ou vendue sur un support
+                                quelconque à des tiers. Seule l’hypothèse de la transmission de l’association ARTS et de
+                                ses droits permettrait la transmission des dites informations à l’éventuel acquéreur qui
+                                serait à son tour tenu de la même obligation de conservation et de modification des
+                                données vis à vis de l’utilisateur du site www.association-arts.com.</p>
+                            <p>Le site n’est pas déclaré à la CNIL car il ne recueille pas d’informations
+                                personnelles.</p>
+                            <p>Les bases de données sont protégées par les dispositions de la loi du 1er juillet 1998
+                                transposant la directive 96/9 du 11 mars 1996 relative à la protection juridique des
+                                bases de données.</p>
+                            <h3>Liens hypertextes et cookies</h3>
+                            <p>Le site www.association-arts.com contient un certain nombre de liens hypertextes vers
+                                d’autres sites, mis en place avec l’autorisation de l’association ARTS. Cependant,
+                                association ARTS n’a pas la possibilité de vérifier le contenu des sites ainsi visités,
+                                et n’assumera en conséquence aucune responsabilité de ce fait.</p>
+                            <p>La navigation sur le site www.association-arts.com est susceptible de provoquer
+                                l’installation de cookie(s) sur l’ordinateur de l’utilisateur. Un cookie est un fichier
+                                de petite taille, qui ne permet pas l’identification de l’utilisateur, mais qui
+                                enregistre des informations relatives à la navigation d’un ordinateur sur un site. Les
+                                données ainsi obtenues visent à faciliter la navigation ultérieure sur le site, et ont
+                                également vocation à permettre diverses mesures de fréquentation.</p>
+                            <p>Le refus d’installation d’un cookie peut entraîner l’impossibilité d’accéder à certains
+                                services. L’utilisateur peut toutefois configurer son ordinateur de la manière suivante,
+                                pour refuser l’installation des cookies :</p>
+                            <p>Sous Internet Explorer : onglet outil (pictogramme en forme de rouage en haut a droite) /
+                                options internet. Cliquez sur Confidentialité et choisissez Bloquer tous les cookies.
+                                Validez sur Ok.</p>
+                            <p>Sous Firefox : en haut de la fenêtre du navigateur, cliquez sur le bouton Firefox, puis
+                                aller dans l’onglet Options. Cliquer sur l’onglet Vie privée. Paramétrez les Règles de
+                                conservation sure : utiliser les paramètres personnalisés pour l’historique. Enfin
+                                décochez-la pour désactiver les cookies.</p>
+                            <p>Sous Safari : Cliquez en haut à droite du navigateur sur le pictogramme de menu
+                                (symbolisé par un rouage). Sélectionnez Paramètres. Cliquez sur Afficher les paramètres
+                                avancés. Dans la section «&nbsp;Confidentialité&nbsp;», cliquez sur Paramètres de
+                                contenu. Dans la section «&nbsp;Cookies&nbsp;», vous pouvez bloquer les cookies.</p>
+                            <p>Sous Chrome : Cliquez en haut à droite du navigateur sur le pictogramme de menu
+                                (symbolisé par trois lignes horizontales). Sélectionnez Paramètres. Cliquez sur Afficher
+                                les paramètres avancés. Dans la section «&nbsp;Confidentialité&nbsp;», cliquez sur
+                                préférences. Dans l’onglet «&nbsp;Confidentialité&nbsp;», vous pouvez bloquer les
+                                cookies.</p>
+                            <h3>Droit applicable et attribution de juridiction</h3>
+                            <p>Tout litige en relation avec l’utilisation du site www.association-arts.com est soumis au
+                                droit français. Il est fait attribution exclusive de juridiction aux tribunaux
+                                compétents de Paris.</p>
+                            <h3>Les principales lois concernées</h3>
+                            <p>Loi n° 78-17 du 6 janvier 1978, notamment modifiée par la loi n° 2004-801 du 6 août 2004
+                                relative à l’informatique, aux fichiers et aux libertés.</p>
+                            <p>Loi n° 2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique.</p>
+                            <h3>Lexique</h3>
+                            <p>Utilisateur : Internaute se connectant, utilisant le site susnommé.</p>
+                            <p>Informations personnelles : « les informations qui permettent, sous quelque forme que ce
+                                soit, directement ou non, l’identification des personnes physiques auxquelles elles
+                                s’appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).</p></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    </div>
                 </div>
             </div>
         </div>

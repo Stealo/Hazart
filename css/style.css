@@ -131,7 +131,6 @@ p {
 
 .slide_footer {
   width: 100vw;
-  height: 50vh;
   padding: 0%;
   margin: 0%;
   display: table;
@@ -215,6 +214,46 @@ nav-link {
     font-size: 20px !important;
   }
 }
+/*GENERATEUR DE CITATION*/
+.modal-content {
+  background-color: #2D3436 !important;
+}
+.modal-content .modal-title {
+  color: #FFFFFF !important;
+}
+.modal-content .modal-header {
+  border: none;
+}
+.modal-content .button {
+  color: #E74C3C;
+  margin: 0 10px 0 8px;
+  border: 2px solid #E74C3C;
+  border-radius: 0px 15px 0px 15px;
+  padding: 1% 8% 2% 8%;
+}
+
+.button_generateur {
+  background: transparent;
+  color: #E74C3C !important;
+  margin: 0 10px 0 8px;
+  border: 2px solid #E74C3C;
+  border-radius: 0px 15px 0px 15px;
+}
+.button_generateur p {
+  color: #E74C3C !important;
+  margin: 0 10px 0 8px;
+}
+.button_generateur:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #E74C3C;
+  transition: 0.5s;
+}
+
+.citation {
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
 /*BLOCK VIDEO BAS*/
 .video_bas {
   background: url("http://hazart.me/img/img/hazard_video.jpg") no-repeat center;
@@ -237,7 +276,7 @@ nav-link {
   opacity: 1;
 }
 
-/*PRESENTAION MAESTRIA*/
+/*PRESENTATION MAESTRIA*/
 .block_text_header_grey {
   color: #2D3436;
   background-color: #F5F5F5;
@@ -286,6 +325,29 @@ nav-link {
   transition: 0.5s;
 }
 
+/*FOOTER*/
+.block_text_footer {
+  width: 100%;
+}
+.block_text_footer h4 {
+  color: #FFFFFF;
+}
+.block_text_footer a {
+  color: #E74C3C;
+}
+.block_text_footer img {
+  width: 8%;
+}
+
+@media screen and (max-width: 575px) {
+  .block_text_footer {
+    width: 100%;
+  }
+
+  .button_contact {
+    margin-top: 150px;
+  }
+}
 /*
 
 !*HEADER*!
