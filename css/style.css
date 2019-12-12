@@ -232,6 +232,16 @@ nav-link {
   padding: 1% 8% 2% 8%;
 }
 
+blockquote {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 10px;
+}
+blockquote .citation {
+  color: #2D3436 !important;
+  font-size: 20px;
+}
+
 .button_generateur {
   background: transparent;
   color: #E74C3C !important;
@@ -327,6 +337,14 @@ nav-link {
 }
 
 /*FOOTER*/
+.button_newsletter {
+  color: #E74C3C !important;
+  margin: 0 10px 0 8px !important;
+  border: 2px solid #E74C3C !important;
+  border-radius: 0px 15px 0px 15px !important;
+  background-color: #2D3436 !important;
+}
+
 .block_text_footer {
   width: 100%;
 }
@@ -349,192 +367,5 @@ nav-link {
     margin-top: 150px;
   }
 }
-/*
-
-!*HEADER*!
-
-.block_text_header {
-  color: #ffffff;
-  background-color: $noir;
-  padding: 10%;
-
-  p {
-    color: #ffffff;
-    font-size: 14px;
-  }
-
-  b {
-    border-bottom: 1px solid #ffffff;
-  }
-}
-
-.paint_header_grey {
-  z-index: 1;
-}
-
-.block_text_header_grey {
-  color: $noir;
-  background-color: $gris;
-  padding: 10%;
-
-  p {
-    color: $noir;
-    font-size: 14px;
-  }
-
-  b {
-    border-bottom: 1px solid $noir;
-  }
-}
-
-.logo_maestria {
-  width: 25%;
-}
-
-.text_maestria {
-  width: 100%;
-}
-
-!*MAIN*!
-
-@media screen and (max-width: 768px) {
-  .img_paint {
-    position: absolute ;
-    top: 10px;
-    z-index: 2;
-  }
-  .block_text_paint{
-    height: 80vh;
-    bottom: -33px;
-    position: absolute !important;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .block_text_header_grey{
-    padding: 30% 20% 10% 20%!important;
-    position: absolute !important;
-    top: 11%;
-    margin-top: 45%;
-  }
-  .block_text_header_grey_image{
-    position: absolute;
-    bottom: 60%;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .img_paint {
-    position: absolute ;
-    top: -45px;
-    z-index: 2;
-  }
-  .block_text_paint{
-    height: 80vh;
-    bottom: -33px;
-    position: absolute !important;
-    padding: 40% 73px 12% 17% !important;
-  }
-}
-
-
-!*VIDEO*!
-
-.video_campagne {
-  height: 100%;
-  width: 100%;
-}
-
-
-!*CONTACT*!
-
-.contact_form {
-  text-align: center;
-  margin: auto;
-  display: table-cell;
-  vertical-align: middle;
-  h2{
-    color: $noir;
-  }
-  p{
-    color: $noir;
-  }
-  h3{
-    font-size: 18px;
-    font-style: italic;
-  }
-}
-
-!*BLOCK VIDEO BAS*!
-
-.video_bas {
-  background: url("http://hazart.me/img/img/hazard_video.jpg") no-repeat center ;
-}
-
-.play_picto {
-  margin: auto;
-  padding: 0 0 10% 25%;
-}
-
-.play_text {
-  z-index: 2;
-}
-
-.black_background {
-  width: 100vw;
-  height: 100vh;
-  background-color: $blanc;
-  opacity: 0.5;
-  position: absolute;
-  z-index: 1;
-}
-
-!*CONTACT*!
-
-.button_contact {
-  background: transparent;
-  a {
-    color: $rouge;
-    margin: 0 15px 0 15px;
-    border: 2px solid $rouge;
-    border-radius: 0px 15px 0px 15px;
-    padding: 0.5% 25% 3% 25%;
-  }
-  &:hover a {
-    background-color: rgb(255, 255, 255, 0.3);
-    color: $rouge;
-    transition: 0.5s;
-  }
-}
-
-!*CONTACT*!
-
-.tex{
-  width: 60%;
-}
-
-!*FOOTER*!
-
-.block_text_footer {
-  text-align: center;
-  margin-top: 12vh;
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-
-  h4 {
-    color: $blanc;
-  }
-
-  a {
-    color: $rouge;
-    margin: 0 8px 0 8px;
-  }
-
-  img {
-    width: 8%;
-  }
-}
-*/
 
 /*# sourceMappingURL=style.css.map */

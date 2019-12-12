@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hazart</title>
+    <meta name="Description" content="une page sur notre campagne hazart,
+    générateur de phrase aléatoire">
     <link rel="stylesheet" href="css/style.css">
-
-    <script src="utils/ScrollMagic.min.js"></script>
 
     <script type="text/javascript" src="js/scrypt.js" async></script>
     <script src="js/jquery.min.js" async></script>
@@ -35,9 +35,9 @@
 <!--NAVBAR-->
 
 <nav class="navbar fixed-top navbar-expand-lg ">
-    <a class="navbar-brand position-absolute logo_marg" href="#">
-        <img class="m-3 logo" src="img/picto/logo/hazart_logo.png" alt="">
-        <img class="logo" src="img/picto/logo/hazart.png" alt="">
+    <a class="navbar-brand position-absolute logo_marg" href="#" aria-label="logo hazart">
+        <img class="m-3 logo" src="img/picto/logo/hazart_logo.png" alt="logo of hazart">
+        <img class="logo" src="img/picto/logo/hazart.png" alt="letters of hazart">
     </a>
     <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,20 +46,30 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav m-auto">
             <li class="nav-item">
-                <a class="nav-link mr-5 link_nav" href="#film">Film <span class="sr-only">(current)</span></a>
+                <a class="nav-link mr-5 link_nav" aria-label="accéder à la partie film"
+                   href="#film">Film
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link mr-5 link_nav" href="#explainer">Explainer</a>
+                <a class="nav-link mr-5 link_nav"
+                   aria-label="accéder à la vidéo explainer"
+                   href="#explainer">Explainer</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link mr-5 link_nav" href="#association">Association</a>
+                <a class="nav-link mr-5 link_nav"
+                   aria-label="accéder à générer association"
+                   href="#association">Association</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link mr-5 link_nav" href="#contact">Contact</a>
+                <a class="nav-link mr-5 link_nav"
+                   aria-label="accéder à contact"
+                   href="#contact">Contact</a>
             </li>
         </ul>
         <button class="button_navbar btn mr-5">
-            <a class="" href="#generateur">Générez votre pitch</a>
+            <a class=""
+               aria-label="accéder à générer votre pitch"
+               href="#generateur">Générez votre pitch</a>
         </button>
     </div>
 </nav>
@@ -70,26 +80,27 @@
     <!--VIDEO FULL PAGE-->
     <figure class="slide row wrappy p-0 m-0" id="film">
         <div class="p-0 m-0 col-12 background_video">
-            <iframe class="video_campagne img-fluid p-0 m-0" style="height: 100%; width: 100%"
-                    src="https://www.youtube.com/embed/egRsDDwiY-U" frameborder="0"
+            <iframe src="https://www.youtube.com/embed/c4twMjeKvAg " style="height: 100%; width: 100%"
+                    frameborder="0" title="video_hazart"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
             </iframe>
         </div>
     </figure>
 
+
     <!--BLOCK HAZART-->
     <section class="p-0 m-0 slide row justify-content-center">
 
         <div class="img_paint p-0 d-flex align-items-center col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
             <img class="p-0 img-fluid w-100 col-8 offset-2 col-sm-8 offset-sm-2 col-md-8 offset-md-4 col-lg-8 col-xl-8"
-                 src="img/img/hazart_generateur_art(1).jpg" alt="">
+                 src="img/img/hazart_generateur_art(1).jpg" alt="une peinture représentant des anges et des dieux">
         </div>
 
         <div class="p-0 d-flex align-items-center col-sm-12 col-md-6 col-lg-6 col-xl-6" id="generateur">
             <hgroup class="block_text_header block_text_paint m-0 d-flex align-items-center row col-sm-12 col-md-10 col-lg-10 col-xl-10">
                 <h2>Hazart de l'art et <br>rien d'autre</h2>
-                <p>Nous avons constaté que, de plus en plus de philistins cultivés se servent de l’art pour gravir
+                <p>Nous avons constaté que de plus en plus de philistins cultivés se servent de l’art pour gravir
                     les
                     échelons de leur rang social.
                     C’est la raison pour laquelle notre générateur de pitch est fait pour eux !
@@ -104,7 +115,8 @@
         </div>
 
         <!--LE GENERATEUR-->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenterTitle"
              aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -117,14 +129,16 @@
                     <div class="modal-body">
                         <div>
                             <blockquote>
-                                <p class="citation">Citations azerty</p>
+                                <h2>"</h2>
+                                <p class="citation">Citations</p>
+                                <h2>"</h2>
                             </blockquote>
                             <div class="m-auto text-center mt-5">
-                            <button class="button_generateur" id="generer">
-                                <p class="p-0 m-0">
-                                    générer
-                                </p>
-                            </button>
+                                <button class="button_generateur" id="generer">
+                                    <p class="p-0 m-0">
+                                        Générez
+                                    </p>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -139,16 +153,15 @@
 
 
     <!--BLOCK MOTION-->
-    <figure class="slide row m-0 p-0" id="explainer">
-        <div class="black_background p-0 m-0"></div><!--FOND NOIR-->
-        <div class="video_bas d-flex justify-content-center col-12">
-            <div class="m-auto play_text">
-                <img class="play_picto col-8 offset-2" src="img/picto/play.png" alt="">
-                <h2 class="text-center">Notre histoire</h2>
-                <p class="text-center">Découvrez Hazart en une seul minute</p>
-            </div>
-        </div>
-        <div class="block_video">
+
+    <figure class="slide row wrappy p-0 m-0" id="explainer">
+        <div class="p-0 m-0 col-12 background_video">
+            <iframe class="img-fluid p-0 m-0" style="height: 100%; width: 100%"
+                    src="https://www.youtube.com/embed/hGok6yr1Wzc"
+                    frameborder="0" title="video_motion_design"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
         </div>
     </figure>
 
@@ -162,22 +175,24 @@
         <div class="p-0 col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex align-items-center">
             <hgroup class="block_text_header_grey img-fluid col-12 col-sm-10 offset-sm-2 col-md-9 col-lg-9 col-xl-9 offset-md-3">
                 <h2 class="text-right">Maestria</h2>
-                <p class="text-right">L’art se contemple et nous fait ressentir des émotions, mais ça compréhension peut
+                <p class="text-right">L’art se contemple et nous fait ressentir des émotions, mais sa compréhension peut
                     nous échapper.
-                    C’est ce que l’association Maestria cherche à combler au seins de leur rencontre entre artistiques
-                    et consommateurs d’art.
+                    C’est ce que l’association Maestria cherche à combler au sein de
+                    ses rencontres entre artistes et consommateurs d’art.
                 </p>
                 <div class="p-0 col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7 offset-md-5 d-flex align-items-center">
-                    <img class="logo_maestria" src="img/picto/logo/maestria.png" alt="">
-                    <a class="link_nav text-right col-8 offset-1" href="http://maestria-association.fr/" target="_blank">Découvrez
-                        l'association</a>
+                    <img class="logo_maestria" src="img/picto/logo/maestria.png"
+                         alt="logo of association of art Maestria">
+                    <a class="link_nav text-right col-8 offset-1" href="http://maestria-association.fr/"
+                       target="_blank" rel="noopener">
+                        Découvrez l'association</a>
                 </div>
             </hgroup>
         </div>
 
         <div class="p-0 d-flex align-items-center col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
             <img class="block_text_header_grey_image p-0 img-fluid col-8 offset-2 col-sm-9 offset-sm-0 col-md-9 col-lg-9 col-xl-9"
-                 src="img/img/hazart_generateur_art (2).jpg" alt="">
+                 src="img/img/hazart_generateur_art (2).jpg" alt="la statue en marbre d'un couple">
         </div>
 
     </section>
@@ -188,7 +203,7 @@
             <hgroup class="contact_form">
                 <h2 class="text-center">Contactez-nous</h2>
                 <p class="text-center">Et proposez votre critique d'art</p>
-                <textarea class="tex col-8 offset-2" name="contactez-nous" id="contact" rows="4"> écrivez votre message ici
+                <textarea type="text" class="tex col-8 offset-2" name="contactez-nous" id="contact" rows="4"> écrivez votre message ici
             </textarea>
                 <br>
                 <div class="col-12 d-flex align-items-center mt-3">
@@ -203,35 +218,47 @@
 </main>
 
 <!--FOOTER-->
+
+
 <footer>
     <section class="row p-0 m-0 slide_footer pb-5">
 
         <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 block_text_footer">
-            <div class="mt-5 col-10 offset-2">
-                <h4 class="">
-                    Inscrivez-vous à la newsletter
-                </h4>
-                <div class="d-flex align-items-center row">
-                    <textarea class="w-80 mt-3" name="" id="" rows="1"></textarea>
-                    <button class="button_contact btn p-0 m-0 mt-3">
-                        <a href="#">Envoyer</a>
-                    </button>
+            <div class="mt-5 col-10 offset-1">
+                <!-- Begin Mailchimp Signup Form -->
+                <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+                <style type="text/css">
+                    #mc_embed_signup{background:#2D3436; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+                    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                </style>
+                <div id="mc_embed_signup">
+                    <form action="https://hazart.us4.list-manage.com/subscribe/post?u=9f5b0de2c3df8aaea262df70f&amp;id=54b8d33e8f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <label for="mce-EMAIL" class="titre_newsletter"><h4>Inscrivez-vous à la newsletter</h4></label>
+                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9f5b0de2c3df8aaea262df70f_54b8d33e8f" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Envoyer" name="subscribe" id="mc-embedded-subscribe" class="button button_newsletter"></div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+
 
         <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 block_text_footer">
             <div class="mt-5 col-10 offset-2">
                 <h4 class="block_text_footer">Suivez-nous</h4>
                 <div class="">
-                    <a href="https://www.facebook.com/hazart.art/" target="_blank">
-                        <img class="mr-3" src="img/picto/rs/facebook.svg" alt="">
+                    <a href="https://www.facebook.com/hazart.art/" target="_blank" rel="noopener">
+                        <img class="mr-3" src="img/picto/rs/facebook.svg" alt="logo de facebook">
                     </a>
-                    <a href="https://twitter.com/hazart_art" target="_blank">
-                        <img class="mr-3" src="img/picto/rs/twitter.svg" alt="">
+                    <a href="https://twitter.com/hazart_art" target="_blank" rel="noopener">
+                        <img class="mr-3" src="img/picto/rs/twitter.svg" alt="logo de twitter">
                     </a>
-                    <a href="https://www.instagram.com/hazart.art/" target="_blank">
-                        <img class="mr-3" src="img/picto/rs/instagram.svg" alt="">
+                    <a href="https://www.instagram.com/hazart.art/" target="_blank" rel="noopener">
+                        <img class="mr-3" src="img/picto/rs/instagram.svg" alt="logo de instagram">
                     </a>
                 </div>
             </div>
@@ -242,7 +269,8 @@
             Mentions légales
         </button>
 
-        <div class="modal fade" id="mention_legale" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        <div class="modal fade" id="mention_legale" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalLabel"
              aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -260,47 +288,46 @@
                                 l’économie numérique, il est précisé aux utilisateurs du site www.association-arts.com
                                 l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi
                                 :</p>
-                            <p><strong>Propriétaire :</strong> Association ARTS – Association – N° Siret :
-                                79821278300038 – 70 rue du 18 juin – 17138 Puilboreau</p>
+                            <p><strong>Propriétaire :</strong> Association Maestria – Association – N° Siret :
+                                79821278300038 – 15 rues des tilleuls – 75010 Paris</p>
                             <p><strong>Statut juridique :</strong> Association loi 1901</p>
-                            <p><strong>Président :</strong> Olivier Dubufresnil – <a
-                                    href="mailto:contact@association-arts.com">contact@association-arts.com</a><br>
-                                <strong>Trésorière :</strong> Isabelle Girard<br> <strong>Secrétaire :</strong> Laurent&nbsp;<span>Joubeaux</span>
+                            <p><strong>Président :</strong> Jonh Doe – <a
+                                    href="mailto:contact@hazart.com">contact@association-arts.com</a><br>
+                                <strong>Trésorière :</strong> Johnette Doe<br> <strong>Secrétaire :</strong> Johnny <span>Doe</span>
                             </p>
-                            <p><strong>Responsable publication :</strong> Stephane Atlas – <a
-                                    href="1art-2vies@orange.fr">1art-2vies@orange.fr</a><br> Licence d’entrepreneur du
+                            <p><strong>Responsable publication :</strong> John Doe – <a
+                                    href="1art-2vies@orange.fr">adresse@gmail.com</a><br> Licence d’entrepreneur du
                                 spectacle n°2 enregistrée sous n° 1084723 et n°3 enregistrée sous n° 1084724</p>
                             <p><strong>Webmaster et créatrice du site :</strong> <a
-                                    href="https://laurelinefoucault.fr/">Laureline Foucault</a> – <a
-                                    href="contact@laurelinefoucault.fr">contact@laurelinefoucault.fr</a></p>
+                                    href="http://pignon-sur-rue.fr/">Steven Porotto</a> – <a
                             <p><strong>Hébergeur :</strong> 1&amp;1 Internet SARL 7 place de la Gare BP 70109 57201
                                 Sarreguemines Cedex France</p>
                             <p><strong>Crédits :</strong> Le modèle de mentions légales est offert par Subdelirium.com
                                 Mentions légales</p>
                             <h3>Conditions générales d’utilisation du site et des services proposés</h3>
-                            <p>L’utilisation du site www.association-arts.com implique l’acceptation pleine et entière
+                            <p>L’utilisation du site www.hazart.com implique l’acceptation pleine et entière
                                 des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation
                                 sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site
-                                www.association-arts.com sont donc invités à les consulter de manière régulière.</p>
+                                www.hazart.com sont donc invités à les consulter de manière régulière.</p>
                             <p>Ce site est normalement accessible à tout moment aux utilisateurs. Une interruption pour
                                 raison de maintenance technique peut être toutefois décidée par association ARTS, qui
                                 s’efforcera alors de communiquer préalablement aux utilisateurs les dates et heures de
                                 l’intervention.</p>
-                            <p>Le site www.association-arts.com est mis à jour régulièrement. De la même façon, les
+                            <p>Le site www.hazart.com est mis à jour régulièrement. De la même façon, les
                                 mentions légales peuvent être modifiées à tout moment : elles s’imposent néanmoins à
                                 l’utilisateur qui est invité à s’y référer le plus souvent possible afin d’en prendre
                                 connaissance.</p>
                             <h3>Description des services fournis</h3>
-                            <p>Le site www.association-arts.com a pour objet de fournir une information concernant
+                            <p>Le site www.hazart.com a pour objet de fournir une information concernant
                                 l’ensemble des activités de l’association.</p>
-                            <p>Association ARTS s’efforce de fournir sur le site www.association-arts.com des
+                            <p>Association ARTS s’efforce de fournir sur le site www.hazart.com des
                                 informations aussi précises que possible. Toutefois, il ne pourra être tenue responsable
                                 des omissions, des inexactitudes et des carences dans la mise à jour, qu’elles soient de
                                 son fait ou du fait des tiers partenaires qui lui fournissent ces informations.</p>
                             <p>&nbsp;</p>
-                            <p>Toutes les informations indiquées sur le site www.association-arts.com sont données à
+                            <p>Toutes les informations indiquées sur le site www.hazart.com sont données à
                                 titre indicatif, et sont susceptibles d’évoluer. Par ailleurs, les renseignements
-                                figurant sur le site www.association-arts.com ne sont pas exhaustifs. Ils sont donnés
+                                figurant sur le site www.hazart.com ne sont pas exhaustifs. Ils sont donnés
                                 sous réserve de modifications ayant été apportées depuis leur mise en ligne.</p>
                             <h3>Limitations contractuelles sur les données techniques</h3>
                             <p>Le site utilise la technologie JavaScript.</p>
@@ -321,12 +348,12 @@
                             <p>&nbsp;</p>
                             <h3>Limitations de responsabilité</h3>
                             <p>Association ARTS ne pourra être tenue responsable des dommages directs et indirects
-                                causés au matériel de l’utilisateur, lors de l’accès au site www.association-arts.com,
+                                causés au matériel de l’utilisateur, lors de l’accès au site www.hazart.com,
                                 et résultant soit de l’utilisation d’un matériel ne répondant pas aux spécifications
                                 indiquées au point 4, soit de l’apparition d’un bug ou d’une incompatibilité.</p>
                             <p>Association ARTS ne pourra également être tenue responsable des dommages indirects (tels
                                 par exemple qu’une perte de marché ou perte d’une chance) consécutifs à l’utilisation du
-                                site www.association-arts.com.</p>
+                                site www.hazart.com.</p>
                             <p>Des espaces interactifs (possibilité de poser des questions dans l’espace contact) sont à
                                 la disposition des utilisateurs. Association ARTS se réserve le droit de supprimer, sans
                                 mise en demeure préalable, tout contenu déposé dans cet espace qui contreviendrait à la
@@ -339,15 +366,15 @@
                             <p>En France, les données personnelles sont notamment protégées par la loi n° 78-87 du 6
                                 janvier 1978, la loi n° 2004-801 du 6 août 2004, l’article L. 226-13 du Code pénal et la
                                 Directive Européenne du 24 octobre 1995.</p>
-                            <p>A l’occasion de l’utilisation du site www.association-arts.com, peuvent êtres recueillis
+                            <p>A l’occasion de l’utilisation du site www.hazart.com, peuvent êtres recueillis
                                 : l’URL des liens par l’intermédiaire desquels l’utilisateur a accédé au site
-                                www.association-arts.com, le fournisseur d’accès de l’utilisateur, l’adresse de
+                                www.hazart.com, le fournisseur d’accès de l’utilisateur, l’adresse de
                                 protocole Internet (IP) de l’utilisateur.</p>
                             <p>En tout état de cause association ARTS ne collecte des informations personnelles
                                 relatives à l’utilisateur que pour le besoin de certains services proposés par le site
-                                www.association-arts.com. L’utilisateur fournit ces informations en toute connaissance
+                                www.hazart.com. L’utilisateur fournit ces informations en toute connaissance
                                 de cause, notamment lorsqu’il procède par lui-même à leur saisie. Il est alors précisé à
-                                l’utilisateur du site www.association-arts.com l’obligation ou non de fournir ces
+                                l’utilisateur du site www.hazart.com l’obligation ou non de fournir ces
                                 informations.</p>
                             <p>Conformément aux dispositions des articles 38 et suivants de la loi 78-17 du 6 janvier
                                 1978 relative à l’informatique, aux fichiers et aux libertés, tout utilisateur dispose
@@ -358,23 +385,23 @@
                             <p>Le client peut exercer son droit d’accès ou de correction en contactant le prestataire
                                 par courrier à l’adresse :</p><h5>Association ARTS<br> 70 rue du 18 juin<br> 17138
                                 Puilboreau</h5>
-                            <p>Aucune information personnelle de l’utilisateur du site www.association-arts.com n’est
+                            <p>Aucune information personnelle de l’utilisateur du site www.hazart.com n’est
                                 publiée à l’insu de l’utilisateur, échangée, transférée, cédée ou vendue sur un support
                                 quelconque à des tiers. Seule l’hypothèse de la transmission de l’association ARTS et de
                                 ses droits permettrait la transmission des dites informations à l’éventuel acquéreur qui
                                 serait à son tour tenu de la même obligation de conservation et de modification des
-                                données vis à vis de l’utilisateur du site www.association-arts.com.</p>
+                                données vis à vis de l’utilisateur du site www.hazart.com.</p>
                             <p>Le site n’est pas déclaré à la CNIL car il ne recueille pas d’informations
                                 personnelles.</p>
                             <p>Les bases de données sont protégées par les dispositions de la loi du 1er juillet 1998
                                 transposant la directive 96/9 du 11 mars 1996 relative à la protection juridique des
                                 bases de données.</p>
                             <h3>Liens hypertextes et cookies</h3>
-                            <p>Le site www.association-arts.com contient un certain nombre de liens hypertextes vers
+                            <p>Le site www.hazart.com contient un certain nombre de liens hypertextes vers
                                 d’autres sites, mis en place avec l’autorisation de l’association ARTS. Cependant,
                                 association ARTS n’a pas la possibilité de vérifier le contenu des sites ainsi visités,
                                 et n’assumera en conséquence aucune responsabilité de ce fait.</p>
-                            <p>La navigation sur le site www.association-arts.com est susceptible de provoquer
+                            <p>La navigation sur le site www.hazart.com est susceptible de provoquer
                                 l’installation de cookie(s) sur l’ordinateur de l’utilisateur. Un cookie est un fichier
                                 de petite taille, qui ne permet pas l’identification de l’utilisateur, mais qui
                                 enregistre des informations relatives à la navigation d’un ordinateur sur un site. Les
@@ -400,7 +427,7 @@
                                 préférences. Dans l’onglet «&nbsp;Confidentialité&nbsp;», vous pouvez bloquer les
                                 cookies.</p>
                             <h3>Droit applicable et attribution de juridiction</h3>
-                            <p>Tout litige en relation avec l’utilisation du site www.association-arts.com est soumis au
+                            <p>Tout litige en relation avec l’utilisation du site www.hazart.com est soumis au
                                 droit français. Il est fait attribution exclusive de juridiction aux tribunaux
                                 compétents de Paris.</p>
                             <h3>Les principales lois concernées</h3>
@@ -426,6 +453,7 @@
 <script type="text/javascript" src="js/scrypt.js" async></script>
 <script src="js/jquery.min.js" async></script>
 <script src="js/bootstrap.min.js" async></script>
+
 </body>
 
 </html>

@@ -1,13 +1,3 @@
-var controller = new ScrollMagic.Controller({vertical: false});
-
-var scene = new ScrollMagic.Scene({
-    triggerElement: '.red-cube'
-})
-
-    .setClassToggle('.red-cube', 'show')
-    .addTo(controller);
-
-
 /*SMOOTH SCROLL*/
 $('a[href*="#"]')
     .not('[href="#"]')
@@ -39,24 +29,20 @@ $('a[href*="#"]')
         }
     });
 
-/*SCROLLMAGIC ANIM*/
-
-var controller = new ScrollMagic.Controller();
-
-var scene = new ScrollMagic.Scene({
-    triggerElement: '.red-cube'
-})
-
-    .setClassToggle('.red-cube', 'show')
-    .addTo(controller);
-
 
 /*GENERATEUR DE PITCH*/
 
-var citations = ["La lecture est un art et tout le monde n'est pas artiste.",
-  "L'art de gouverner consiste à ne pas laisser vieillir les hommes dans leur poste.",
-  "Écrire est un art créé à partir d'un point ayant foui la pointe de ma plume.",
-  "La vie est courte, l'art est long, l'occasion fugitive, l'expérience trompeuse, le jugement difficile."];
+var citations = ["La lecture est un art et tout le monde n'est pas artiste. Madeleine Chapsal",
+    "L'art de gouverner consiste à ne pas laisser vieillir les hommes dans leur poste. Napoléon Bonaparte",
+    "Écrire est un art créé à partir d'un point ayant foui la pointe de ma plume. Mofaddel Abderrahim",
+    "La vie est courte, l'art est long, l'occasion fugitive, l'expérience trompeuse, le jugement difficile. Hippocrate",
+    "L’art est une abstraction, c’est le moyen de monter vers Dieu en faisant comme notre divin Maître, créer. Paul Gauguin",
+    "Le seul réel dans l’art, c’est l’art. Paul Valéry ",
+    "L’art, est à l’image de la création. C’est un symbole, tout comme le monde terrestre est un symbole du cosmos. Paul Klee",
+    "L’art, c’est le plus court chemin de l’homme à l’homme. André Malraux",
+    "C’est épatant, les artistes. Ils sont fous, comme tout le monde, mais pas vraiment comme tout le monde. J’ai un faible pour eux. Françoise Giroud ",
+    "L’oeuvre d’art n’est pas le reflet, l’image du monde; mais elle est à l’image du monde. Eugène Ionesco",
+    "En art, il faut croire avant d'y aller voir. Léon-Paul Fargue"];
 var auteur = "L'auteur";
 var aleatoire = null;
 
@@ -75,3 +61,5 @@ $('document').ready(function () {
     });
 
 });
+
+
